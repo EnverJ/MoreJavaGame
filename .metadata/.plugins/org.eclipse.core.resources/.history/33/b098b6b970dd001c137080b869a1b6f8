@@ -1,0 +1,16 @@
+package ezmet.enver.wizardofyesno;
+
+import javax.swing.JFrame;
+
+public class WizardYesNo extends JFrame {
+	
+	public WizardYesNo(){
+		
+	}
+
+	public static void main(String[] args) {
+		new WizardYesNo();
+
+	}
+
+}
