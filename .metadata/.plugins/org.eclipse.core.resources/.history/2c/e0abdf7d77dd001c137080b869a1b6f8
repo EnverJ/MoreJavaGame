@@ -18,9 +18,7 @@ public class WizardYesNo extends JFrame {
 		add(label);
 		setSize(100,200);
 		setVisible(true);
-		setDefaultCloseOperation(EXIT_ON_CLOSE); 
-		
-		
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
 	public static void main(String[] args) {
