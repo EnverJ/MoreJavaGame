@@ -1,0 +1,39 @@
+package ezmet.enver.guessmycolor;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.UIManager;
+
+public class GuessMyColor extends JFrame {
+	private static final long serialVersion=1L;
+	public GuessMyColor(){
+		setTitle("Guess My Color");
+		setResizable(false);
+		pack();
+		setLocationRelativeTo(null);
+		setVisible(true);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args) {
+		try{
+			String className=UIManager.getCrossPlatformLookAndFeelClassName();
+			UIManager.setLookAndFeel(className);
+			
+		}catch(Exception e){
+			
+		}
+		EventQueue.invokeLater(new Runnable(){
+
+			@Override
+			public void run() {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
+
+	}
+
+}
