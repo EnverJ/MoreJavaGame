@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.awt.Font"/>
-<fullyQualifiedTypeName name="javax.swing.JLabel"/>
-<fullyQualifiedTypeName name="java.awt.EventQueue"/>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="ezmet.enver.wizardofyesno.WizardYesNo"/>
-<fullyQualifiedTypeName name="javax.swing.UIManager"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="javax.swing.UIManager.LookAndFeelInfo"/>
+<fullyQualifiedTypeName name="javax.swing.UIManager"/>
+<fullyQualifiedTypeName name="java.awt.EventQueue"/>
+<fullyQualifiedTypeName name="java.awt.Font"/>
+<fullyQualifiedTypeName name="ezmet.enver.guessmycolor.GuessMyColor"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 </qualifiedTypeNameHistroy>
