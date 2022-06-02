@@ -24,7 +24,6 @@ public class GuessMyColor extends JFrame {
 	}
 
 	private void initGUI() {
-		
 		JLabel titleLabel = new JLabel();
 		Font titleFont = new Font(Font.SERIF, Font.BOLD, 52);
 		titleLabel.setFont(titleFont);
