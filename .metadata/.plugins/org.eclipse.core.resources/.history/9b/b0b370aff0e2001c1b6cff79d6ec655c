@@ -39,7 +39,7 @@ public class GuessMyColor extends JFrame {
 		centerPanel.setBackground(Color.BLUE);
 		add(centerPanel,BorderLayout.CENTER);
 		
-		Dimension size=new Dimension(50,50);
+		Dimension size=new Dimension(s0,50);
 		samplePanel.setBackground(Color.BLACK);
 		samplePanel.setPreferredSize(size);
 		centerPanel.add(samplePanel);
