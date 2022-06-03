@@ -2,7 +2,6 @@ package ezmet.enver.guessmycolor;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Font;
 
@@ -13,8 +12,6 @@ import javax.swing.UIManager;
 
 public class GuessMyColor extends JFrame {
 	private static final long serialVersion = 1L;
-	private JPanel samplePanel=new JPanel();
-	private JPanel targetPanel=new JPanel();
 
 	public GuessMyColor() {
 		initGUI();
@@ -38,14 +35,6 @@ public class GuessMyColor extends JFrame {
 		JPanel centerPanel=new JPanel();
 		centerPanel.setBackground(Color.BLUE);
 		add(centerPanel,BorderLayout.CENTER);
-		
-		Dimension size=new Dimension(50,50);
-		samplePanel.setBackground(Color.BLACK);
-		samplePanel.setPreferredSize(size);
-		centerPanel.add(samplePanel);
-		targetPanel.setBackground(Color.CYAN);
-		targetPanel.setPreferredSize(size);
-		centerPanel.add(targetPanel);
 		
 		JPanel leftPanel=new JPanel();
 		leftPanel.setBackground(Color.RED);
