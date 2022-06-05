@@ -17,16 +17,16 @@ import javax.swing.UIManager;
 
 public class GuessMyColor extends JFrame {
 	private static final long serialVersion = 1L;
-	private JPanel samplePanel = new JPanel();
-	private JPanel targetPanel = new JPanel();
-
-	private int targetRed = 0;
-	private int targetGreen = 0;
-	private int targetBlue = 0;
-
-	private int red = 0;
-	private int green = 0;
-	private int blue = 0;
+	private JPanel samplePanel=new JPanel();
+	private JPanel targetPanel=new JPanel();
+	
+	private int targetRed=0;
+	private int targetGreen=0;
+	private int targetBlue=0;
+	
+	private int red=0;
+	private int green=0;
+	private int blue=0;
 
 	public GuessMyColor() {
 		initGUI();
@@ -38,54 +38,47 @@ public class GuessMyColor extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		generateTargetColor();
 	}
-
-	private void updateColorSample() {
-		Color color = new Color(red, green, blue);
+	
+	private void updateColorSample(){
+		Color color=new Color(red, green, blue);
 		samplePanel.setBackground(color);
 	}
-
-	private void increaseRed() {
-		if (red <= 240) {
-			red += 15;
+	private void increaseRed(){
+		if(red<=240){
+			red+=15;
 			updateColorSample();
 		}
 	}
-
-	private void decreaseRed() {
-		if (red >= 15) {
-			red -= 15;
-			updateColorSample();
+private void decreaseRed(){
+	if (red>=15){
+		red-=15;
+		updateColorSample();
 		}
+}
+private void increaseGreen(){
+	if (green<=240){
+		green+=15;
+		updateColorSample();
 	}
-
-	private void increaseGreen() {
-		if (green <= 240) {
-			green += 15;
-			updateColorSample();
-		}
+}
+private void decreaseGreen(){
+	if(green>=15){
+		green-=15;
+		updateColorSample();
 	}
-
-	private void decreaseGreen() {
-		if (green >= 15) {
-			green -= 15;
-			updateColorSample();
-		}
+}
+private void increaseBlue(){
+	if(blue<240){
+		blue+=15;
+		updateColorSample();
 	}
-
-	private void increaseBlue() {
-		if (blue < 240) {
-			blue += 15;
-			updateColorSample();
-		}
+}
+private void decreaseBlue(){
+	if(blue>=15){
+		blue-=15;
+		updateColorSample();
 	}
-
-	private void decreaseBlue() {
-		if (blue >= 15) {
-			blue -= 15;
-			updateColorSample();
-		}
-	}
-
+}
 	private void initGUI() {
 
 		JLabel titleLabel = new JLabel();
@@ -204,15 +197,13 @@ public class GuessMyColor extends JFrame {
 		});
 
 	}
-
-	private void generateTargetColor() {
-		Random rand = new Random();
-		targetRed = rand.nextInt(18) * 15;
-		targetGreen = rand.nextInt(18) * 15;
-		targetBlue = rand.nextInt(18) * 15;
-		Color targetColor = new Color(targetRed, targetGreen, targetBlue); // red,
-																			// green,
-																			// blue
+	
+	private void generateTargetColor(){
+		Random rand=new Random();
+		targetRed=rand.nextInt(18)*15;
+		targetGreen=rand.nextInt(18)*15;
+		targetBlue=rand.nextInt(18)*15;
+		Color targetColor=new Color(targetRed,targetGreen,targetBlue);  // red, green, blue
 		targetPanel.setBackground(targetColor);
 	}
 

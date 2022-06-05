@@ -17,16 +17,12 @@ import javax.swing.UIManager;
 
 public class GuessMyColor extends JFrame {
 	private static final long serialVersion = 1L;
-	private JPanel samplePanel = new JPanel();
-	private JPanel targetPanel = new JPanel();
-
-	private int targetRed = 0;
-	private int targetGreen = 0;
-	private int targetBlue = 0;
-
-	private int red = 0;
-	private int green = 0;
-	private int blue = 0;
+	private JPanel samplePanel=new JPanel();
+	private JPanel targetPanel=new JPanel();
+	
+	private int targetRed=0;
+	private int targetGreen=0;
+	private int targetBlue=0;
 
 	public GuessMyColor() {
 		initGUI();
@@ -39,55 +35,8 @@ public class GuessMyColor extends JFrame {
 		generateTargetColor();
 	}
 
-	private void updateColorSample() {
-		Color color = new Color(red, green, blue);
-		samplePanel.setBackground(color);
-	}
-
-	private void increaseRed() {
-		if (red <= 240) {
-			red += 15;
-			updateColorSample();
-		}
-	}
-
-	private void decreaseRed() {
-		if (red >= 15) {
-			red -= 15;
-			updateColorSample();
-		}
-	}
-
-	private void increaseGreen() {
-		if (green <= 240) {
-			green += 15;
-			updateColorSample();
-		}
-	}
-
-	private void decreaseGreen() {
-		if (green >= 15) {
-			green -= 15;
-			updateColorSample();
-		}
-	}
-
-	private void increaseBlue() {
-		if (blue < 240) {
-			blue += 15;
-			updateColorSample();
-		}
-	}
-
-	private void decreaseBlue() {
-		if (blue >= 15) {
-			blue -= 15;
-			updateColorSample();
-		}
-	}
-
 	private void initGUI() {
-
+		
 		JLabel titleLabel = new JLabel();
 		Font titleFont = new Font(Font.SERIF, Font.BOLD, 52);
 		titleLabel.setFont(titleFont);
@@ -97,122 +46,89 @@ public class GuessMyColor extends JFrame {
 		titleLabel.setForeground(Color.WHITE);
 		titleLabel.setOpaque(true);
 		add(titleLabel, BorderLayout.PAGE_START);
-
-		JPanel centerPanel = new JPanel();
+		
+		JPanel centerPanel=new JPanel();
 		centerPanel.setBackground(Color.BLUE);
-		add(centerPanel, BorderLayout.CENTER);
-
-		Dimension size = new Dimension(50, 50);
+		add(centerPanel,BorderLayout.CENTER);
+		
+		Dimension size=new Dimension(50,50);
 		samplePanel.setBackground(Color.BLACK);
 		samplePanel.setPreferredSize(size);
 		centerPanel.add(samplePanel);
 		targetPanel.setBackground(Color.CYAN);
 		targetPanel.setPreferredSize(size);
 		centerPanel.add(targetPanel);
-
-		JPanel leftPanel = new JPanel();
+		
+		JPanel leftPanel=new JPanel();
 		leftPanel.setBackground(Color.RED);
-		add(leftPanel, BorderLayout.LINE_START);
-
-		JPanel rightPanel = new JPanel();
+		add(leftPanel,BorderLayout.LINE_START);
+		
+		JPanel rightPanel=new JPanel();
 		rightPanel.setBackground(Color.GREEN);
-		add(rightPanel, BorderLayout.LINE_END);
-
-		JPanel buttonPanel = new JPanel();
+		add(rightPanel,BorderLayout.LINE_END);
+		
+		JPanel buttonPanel=new JPanel();
 		buttonPanel.setBackground(Color.YELLOW);
-		add(buttonPanel, BorderLayout.PAGE_END);
-
-		Font font = new Font(Font.DIALOG, Font.BOLD, 18);
-
-		JButton moreRedButton = new JButton("+");
+		add(buttonPanel,BorderLayout.PAGE_END);
+		
+		
+		Font font=new Font(Font.DIALOG,Font.BOLD,18);
+		
+		JButton moreRedButton=new JButton("+");
 		moreRedButton.setBackground(Color.RED);
 		buttonPanel.add(moreRedButton);
 		moreRedButton.setFont(font);
 		moreRedButton.addActionListener(new ActionListener() {
-
+			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				increaseRed();
-
+				
 			}
 		});
 		buttonPanel.add(moreRedButton);
-
-		JButton lessRedButton = new JButton("-");
+		
+		JButton lessRedButton=new JButton("-");
 		lessRedButton.setBackground(Color.RED);
 		buttonPanel.add(lessRedButton);
 		lessRedButton.setFont(font);
 		lessRedButton.addActionListener(new ActionListener() {
-
+			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				decreaseRed();
 
+				
 			}
 		});
-
-		JButton moreGreenButton = new JButton("+");
+		
+		JButton moreGreenButton=new JButton("+");
 		moreGreenButton.setBackground(Color.GREEN);
 		buttonPanel.add(moreGreenButton);
 		moreGreenButton.setFont(font);
-		moreGreenButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				increaseGreen();
-
-			}
-		});
-
-		JButton lessGreenButton = new JButton("-");
+		
+		JButton lessGreenButton=new JButton("-");
 		lessGreenButton.setBackground(Color.GREEN);
 		buttonPanel.add(lessGreenButton);
 		lessGreenButton.setFont(font);
-		lessGreenButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				decreaseGreen();
-
-			}
-		});
-
-		JButton moreBlueButton = new JButton("+");
+		
+		JButton moreBlueButton=new JButton("+");
 		moreBlueButton.setBackground(Color.BLUE);
 		buttonPanel.add(moreBlueButton);
 		moreBlueButton.setFont(font);
-		moreBlueButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				increaseBlue();
-
-			}
-		});
-
-		JButton lessBlueButton = new JButton("-");
+		
+		JButton lessBlueButton=new JButton("-");
 		lessBlueButton.setBackground(Color.BLUE);
 		buttonPanel.add(lessBlueButton);
 		lessBlueButton.setFont(font);
-		lessBlueButton.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				decreaseBlue();
-
-			}
-		});
 
 	}
-
-	private void generateTargetColor() {
-		Random rand = new Random();
-		targetRed = rand.nextInt(18) * 15;
-		targetGreen = rand.nextInt(18) * 15;
-		targetBlue = rand.nextInt(18) * 15;
-		Color targetColor = new Color(targetRed, targetGreen, targetBlue); // red,
-																			// green,
-																			// blue
+	
+	private void generateTargetColor(){
+		Random rand=new Random();
+		targetRed=rand.nextInt(18)*15;
+		targetGreen=rand.nextInt(18)*15;
+		targetBlue=rand.nextInt(18)*15;
+		Color targetColor=new Color(targetRed,targetGreen,targetBlue);  // red, green, blue
 		targetPanel.setBackground(targetColor);
 	}
 
