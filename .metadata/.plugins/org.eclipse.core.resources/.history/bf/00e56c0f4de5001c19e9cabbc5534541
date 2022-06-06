@@ -1,0 +1,7 @@
+package ezmet.enver.mycomponents;
+
+import javax.swing.JLabel;
+
+public class TitleLabel extends JLabel {
+
+}

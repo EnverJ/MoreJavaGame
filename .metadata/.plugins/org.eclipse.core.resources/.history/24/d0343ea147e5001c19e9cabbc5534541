@@ -12,11 +12,8 @@ import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
-
-import ezmet.enver.mycomponents.TitleLabel;
 
 public class GuessMyColor extends JFrame {
 	private static final long serialVersion = 1L;
@@ -45,11 +42,6 @@ public class GuessMyColor extends JFrame {
 	private void updateColorSample() {
 		Color color = new Color(red, green, blue);
 		samplePanel.setBackground(color);
-		if(red==targetRed&&green==targetGreen&&blue==targetBlue){
-			String message="Congratlation!!! colors matched. Red= "+targetRed+", Green= "+targetGreen+", Blue= "+targetBlue;
-			JOptionPane.showMessageDialog(this, message);
-			
-		}
 	}
 
 	private void increaseRed() {
@@ -96,8 +88,15 @@ public class GuessMyColor extends JFrame {
 
 	private void initGUI() {
 
-		TitleLabel titleLabel=new TitleLabel("Guess My Color");
-		add(titleLabel);
+		JLabel titleLabel = new JLabel();
+		Font titleFont = new Font(Font.SERIF, Font.BOLD, 52);
+		titleLabel.setFont(titleFont);
+		titleLabel.setHorizontalAlignment(JLabel.CENTER);
+		titleLabel.setText("Guess My Color");
+		titleLabel.setBackground(Color.BLACK);
+		titleLabel.setForeground(Color.WHITE);
+		titleLabel.setOpaque(true);
+		add(titleLabel, BorderLayout.PAGE_START);
 
 		JPanel centerPanel = new JPanel();
 		centerPanel.setBackground(Color.BLUE);
