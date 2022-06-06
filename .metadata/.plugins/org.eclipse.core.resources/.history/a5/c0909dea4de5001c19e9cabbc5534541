@@ -16,8 +16,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
 
-import ezmet.enver.mycomponents.TitleLabel;
-
 public class GuessMyColor extends JFrame {
 	private static final long serialVersion = 1L;
 	private JPanel samplePanel = new JPanel();
@@ -96,8 +94,15 @@ public class GuessMyColor extends JFrame {
 
 	private void initGUI() {
 
-		TitleLabel titleLabel=new TitleLabel("Guess My Color");
-		add(titleLabel);
+		JLabel titleLabel = new JLabel();
+		Font titleFont = new Font(Font.SERIF, Font.BOLD, 52);
+		titleLabel.setFont(titleFont);
+		titleLabel.setHorizontalAlignment(JLabel.CENTER);
+		titleLabel.setText("Guess My Color");
+		titleLabel.setBackground(Color.BLACK);
+		titleLabel.setForeground(Color.WHITE);
+		titleLabel.setOpaque(true);
+		add(titleLabel, BorderLayout.PAGE_START);
 
 		JPanel centerPanel = new JPanel();
 		centerPanel.setBackground(Color.BLUE);
