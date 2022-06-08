@@ -38,8 +38,6 @@ public class WizardYesNo extends JFrame {
 	//	JLabel disclaimerLabel=new JLabel(disclaimer);
 		JTextArea disclaimerTextArea=new JTextArea(disclaimer,3,30);
 		disclaimerTextArea.setLineWrap(true);
-		disclaimerTextArea.setWrapStyleWord(true);
-		disclaimerTextArea.setEditable(false);
 		add(disclaimerTextArea,BorderLayout.PAGE_END);
 		setTitle("Wizard of Yes/No");
 		setResizable(false);
