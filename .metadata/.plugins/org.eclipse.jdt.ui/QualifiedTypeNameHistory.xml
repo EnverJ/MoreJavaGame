@@ -18,4 +18,5 @@
 <fullyQualifiedTypeName name="ezmet.enver.mycomponents.TitleLabel"/>
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JTextArea"/>
 </qualifiedTypeNameHistroy>
