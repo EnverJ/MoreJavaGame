@@ -2,10 +2,7 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.lang.Runnable"/>
 <fullyQualifiedTypeName name="ezmet.enver.wizardofyesno.WizardYesNo"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="javax.swing.UIManager.LookAndFeelInfo"/>
-<fullyQualifiedTypeName name="javax.swing.UIManager"/>
-<fullyQualifiedTypeName name="java.awt.EventQueue"/>
 <fullyQualifiedTypeName name="ezmet.enver.guessmycolor.GuessMyColor"/>
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
@@ -18,7 +15,11 @@
 <fullyQualifiedTypeName name="javax.swing.JScrollBar"/>
 <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
 <fullyQualifiedTypeName name="java.awt.Dimension"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="javax.swing.UIManager"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="java.awt.EventQueue"/>
+<fullyQualifiedTypeName name="ezmet.enver.framed.Framed"/>
 <fullyQualifiedTypeName name="ezmet.enver.mycomponents.TitleLabel"/>
 <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
-<fullyQualifiedTypeName name="java.awt.Color"/>
 </qualifiedTypeNameHistroy>
