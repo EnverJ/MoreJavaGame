@@ -1,0 +1,7 @@
+package ezmet.enver.framed;
+
+import javax.swing.JButton;
+
+public class LighButton extends JButton {
+
+}
