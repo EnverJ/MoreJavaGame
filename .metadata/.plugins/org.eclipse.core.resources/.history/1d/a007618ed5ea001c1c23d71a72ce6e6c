@@ -6,13 +6,13 @@ import java.awt.Dimension;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
-public class LightButton extends JButton {
+public class LighButton extends JButton {
 	private static final long serialVersionUID = 1L;
 	private final int MAXSIZE = 50;
 	private int row = 0;
 	private int col = 0;
 
-	public LightButton(int row, int col) {
+	public LighButton(int row, int col) {
 		this.row = row;
 		this.col = col;
 		setBackground(Color.black);

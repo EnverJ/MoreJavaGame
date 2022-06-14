@@ -3,8 +3,6 @@ package ezmet.enver.framed;
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import java.awt.GridLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.Arrays;
 
 import javax.swing.JFrame;
@@ -37,19 +35,6 @@ public class Framed extends JFrame {
 		for(int row=0;row<GRIDSIZE;row++){
 			for(int col=0;col<GRIDSIZE;col++){
 				lighButton[row][col]=new LightButton(row, col);
-				lighButton[row][col].addActionListener(new ActionListener() {
-					
-					@Override
-					public void actionPerformed(ActionEvent e) {
-						// TODO Auto-generated method stub
-						LightButton button=(LightButton) e.getSource();
-						int row=button.getRow();
-						int col=button.getCol();
-						toggleLights(row,col);
-						
-					}
-				});
-				
 				centerPanel.add(lighButton[row][col]);
 			}
 		}

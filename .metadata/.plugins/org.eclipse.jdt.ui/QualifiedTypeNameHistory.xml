@@ -4,7 +4,6 @@
 <fullyQualifiedTypeName name="ezmet.enver.wizardofyesno.WizardYesNo"/>
 <fullyQualifiedTypeName name="javax.swing.UIManager.LookAndFeelInfo"/>
 <fullyQualifiedTypeName name="ezmet.enver.guessmycolor.GuessMyColor"/>
-<fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
@@ -17,10 +16,13 @@
 <fullyQualifiedTypeName name="java.awt.EventQueue"/>
 <fullyQualifiedTypeName name="ezmet.enver.framed.Framed"/>
 <fullyQualifiedTypeName name="ezmet.enver.mycomponents.TitleLabel"/>
-<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
 <fullyQualifiedTypeName name="javax.swing.JButton"/>
 <fullyQualifiedTypeName name="java.awt.Dimension"/>
 <fullyQualifiedTypeName name="java.awt.Color"/>
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
 <fullyQualifiedTypeName name="ezmet.enver.framed.LighButton"/>
+<fullyQualifiedTypeName name="javax.swing.JPanel"/>
+<fullyQualifiedTypeName name="java.awt.GridLayout"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="ezmet.enver.framed.LightButton"/>
 </qualifiedTypeNameHistroy>
